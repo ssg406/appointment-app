@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="main-section"
+            xmlns="http://javafx.com/javafx/18"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="online.samjones.controller.AppointmentsByMonthAndTypeController">
+   <Label fx:id="headerLabel" layoutX="26.0" layoutY="32.0" styleClass="header-text" text="Appointments by Month and Type">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Separator layoutX="26.0" layoutY="62.0" prefHeight="2.0" prefWidth="739.0" />
+   <ComboBox fx:id="appointmentMonthComboBox" layoutX="592.0" layoutY="89.0" prefWidth="150.0" promptText="Month" styleClass="drop-down" />
+   <Label fx:id="noChartDataLabel" layoutX="382.0" layoutY="300.0" />
+   <PieChart fx:id="appointmentPieChart" layoutX="26.0" layoutY="129.0" prefHeight="397.0" prefWidth="724.0" />
+   <Label fx:id="pieChartDataLabel" layoutX="26.0" layoutY="561.0" prefHeight="17.0" prefWidth="437.0">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+</AnchorPane>

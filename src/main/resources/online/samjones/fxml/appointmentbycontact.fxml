@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="main-section"
+
+            xmlns="http://javafx.com/javafx/18"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="online.samjones.controller.AppointmentByContactController">
+    <TextArea fx:id="reportTextArea" editable="false" layoutX="54.0" layoutY="98.0" prefHeight="403.0" prefWidth="691.0" styleClass="report-text-area" />
+    <ButtonBar layoutX="545.0" layoutY="529.0" prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+          <Button fx:id="saveButton" mnemonicParsing="false" onAction="#handleSaveToFile" styleClass="btn" text="Save to File" />
+          <Button fx:id="closeButton" mnemonicParsing="false" onAction="#closeWindow" styleClass="btn" text="Close" />
+      </buttons>
+    </ButtonBar>
+    <ComboBox fx:id="contactComboBox" layoutX="595.0" layoutY="46.0" prefWidth="150.0" promptText="Select Contact" styleClass="drop-down" />
+    <Label fx:id="headerLabel" layoutX="54.0" layoutY="45.0" styleClass="header-text" text="Appointments by Contact">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>

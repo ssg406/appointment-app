@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" styleClass="main-section"
+            xmlns="http://javafx.com/javafx/18"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="online.samjones.controller.AppointmentVolumeController">
+    <BarChart fx:id="appointmentVolumeChart" layoutX="23.0" layoutY="45.0" prefHeight="527.0" prefWidth="711.0">
+      <xAxis>
+          <CategoryAxis fx:id="monthAxis" label="Month" side="BOTTOM" />
+      </xAxis>
+      <yAxis>
+          <NumberAxis fx:id="numberAppointmentsAxis" label="Appointments" side="LEFT" />
+      </yAxis>
+    </BarChart>
+    <Label fx:id="headerLabel" layoutX="273.0" layoutY="31.0" styleClass="header-text" text="Appointment Volume by Month">
+        <font>
+          <Font size="18.0" />
+        </font>
+    </Label>
+</AnchorPane>

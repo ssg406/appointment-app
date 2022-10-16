@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="aboutVBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      prefHeight="325.0" prefWidth="600.0" spacing="10.0"
+      xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="online.samjones.controller.AboutDialogController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <Label styleClass="header-text" text="Client Schedule Manager">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Label>
+   <Separator prefWidth="200.0" />
+   <Label styleClass="paragraph-text" text="Version 1.0">
+      <font>
+         <Font name="System Italic" size="12.0" />
+      </font>
+   </Label>
+   <Label prefHeight="71.0" prefWidth="560.0" styleClass="paragraph-text" text="This application manages customers and appointments through a MySQL database. Appointments and customers can be viewed, created, updated, and deleted. All appointment times are shown in the user's local time zone and stored in the database as UTC. Additionally, the application can be used in both English and French depending on the language settings of the PC." wrapText="true" />
+   <Label prefHeight="21.0" prefWidth="560.0" styleClass="paragraph-text" text="Built on Oracle OpenJDK / JavaFX v17.0.1 and MySQL Connector/J v8.0.25" />
+   <Label styleClass="label-text" text="License: GNU AGPLv3">
+      <font>
+         <Font name="System Bold" size="12.0" />
+      </font>
+   </Label>
+   <Label styleClass="label-text" text="Contact sjo2697@wgu.edu with questions or for information.">
+      <font>
+         <Font name="System Italic" size="14.0" />
+      </font>
+   </Label>
+   <HBox alignment="CENTER">
+      <VBox.margin>
+         <Insets top="10.0" />
+      </VBox.margin>
+      <Button alignment="CENTER" mnemonicParsing="false" onAction="#closeWindow" styleClass="btn" text="Close" />
+   </HBox>
+</VBox>
