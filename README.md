@@ -1,7 +1,7 @@
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# Scheduler App
+# Appointment App
 An appointment and customer manager built with JavaFX
 
 ## About the Project
